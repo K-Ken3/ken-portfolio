@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
               <div className="absolute inset-8 rounded-full overflow-hidden border-4 border-slate-900 shadow-2xl animate-float">
                 <img 
                   // Change the src below to your local file path, e.g., '/my-photo.jpg'
-                  src="my-photo.jpeg" 
+                  src="my-photo.JPEG" 
                   alt="Profile" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
