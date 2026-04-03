@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { PROJECTS } from '../constants.tsx';
 
@@ -18,7 +17,13 @@ const Projects: React.FC = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {PROJECTS.map((project) => (
-            <div key={project.id} className="group relative rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 transition-all duration-500 hover:border-primary/30">
+            <a 
+              key={project.id} 
+              href={project.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group relative rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 transition-all duration-500 hover:border-primary/30"
+            >
               <div className="aspect-[4/3] overflow-hidden">
                 <img 
                   src={project.image} 
@@ -41,11 +46,11 @@ const Projects: React.FC = () => {
                   {project.description}
                 </p>
                 <div className="mt-6 pt-4 border-t border-white/10 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-all duration-700 delay-200">
-                  <span className="text-xs font-bold text-white uppercase tracking-widest">Explore Details</span>
+                  <span className="text-xs font-bold text-white uppercase tracking-widest">Explore Fresh</span>
                   <div className="w-10 h-10 rounded-full bg-white text-dark flex items-center justify-center font-bold">→</div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

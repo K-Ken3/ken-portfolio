@@ -47,16 +47,24 @@ export const SERVICES: Service[] = [
 ];
 
 export const PROJECTS: Project[] = [
-  {
+    {
     id: '1',
+    title: 'Ndaje App',
+    description: 'A premier delivery service platform, connecting hotels with reliable suppliers across Rwanda. Fast, efficient, and professional.',
+    image: 'ndaje poster.jpg', 
+    tags: ['TypeScript', 'Firebase', 'Tailwind', 'Next.js','mongodb'],
+    link: 'https://ndaje-hotel-supply.vercel.app/'
+  },
+  {
+    id: '2',
     title: 'Video Summarizer AI',
     description: 'An AI-powered application that analyzes video content and generates concise summaries automatically. It helps users quickly understand long videos by extracting key points, improving content consumption efficiency.',
     image: 'vid-sum.png',
     tags: ['React', 'D3.js', 'AI'],
-    link: '#'
+    link: 'https://notegpt.io/youtube-video-summarizer'
   },
   {
-    id: '2',
+    id: '3',
     title: 'Stock & Expense Management System',
     description: 'A web-based financial tracking system that manages stock items, expenses, payment status (paid/unpaid), and date filtering, designed to improve business record accuracy and control.',
     image: 'stock-man.png', 
@@ -64,11 +72,19 @@ export const PROJECTS: Project[] = [
     link: '#'
   },
   {
-    id: '3',
+    id: '4',
     title: 'Responsive News Reporter Platform',
     description: 'A dynamic, database-driven news website with categorized content, reporter dashboard, and publishing features, built for scalability and real-world deployment.',
     image: 'news-repo.png', 
     tags: ['TypeScript', 'Firebase', 'Tailwind'],
-    link: '#'
+    link: 'https://veritas-news-reporter-check-fact.vercel.app/'
+  },
+   {
+    id: '5',
+    title: 'Icyeza One Coffee Shop Website',
+    description: 'A modern, responsive website for a local coffee shop, featuring a menu display, online ordering system, and customer reviews.',
+    image: 'Icyeza.png', 
+    tags: ['React', 'Node.js', 'MongoDB'],
+    link: 'https://icyeza-one-website.vercel.app/'
   }
 ];
